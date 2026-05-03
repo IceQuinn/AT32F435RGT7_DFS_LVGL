@@ -53,6 +53,9 @@ void SysTick_Handler(void)
 
     rt_tick_increase();
 
+    extern void lv_tick_inc(uint32_t tick_period);
+    lv_tick_inc(1);
+
     /* leave interrupt */
     rt_interrupt_leave();
 }
