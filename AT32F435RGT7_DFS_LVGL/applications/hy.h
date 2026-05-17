@@ -12,6 +12,6 @@
 
 #include "lvgl.h"
 
-LV_IMG_DECLARE(rw3);
+LV_IMG_DECLARE(hy1);
 
 #endif /* APPLICATIONS_HY_H_ */

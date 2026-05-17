@@ -33,18 +33,9 @@ void boot_ui_create(void)
 
     img = lv_img_create(lv_scr_act());
 
-    lv_img_set_src(img, &rw3);
+    lv_img_set_src(img, &hy1);
 
     lv_obj_center(img);
-
-
-//    // 启动画面
-//    scr_boot = lv_obj_create(NULL);
-//
-//    lv_obj_t * label = lv_label_create(scr_boot);
-////    lv_label_set_text(label, "My Device\nLoading...");
-//    lv_img_set_src(label, &hy_map);
-//    lv_obj_center(label);
 
     // 主界面
     scr_main = lv_obj_create(NULL);
@@ -169,5 +160,5 @@ void lv_user_gui_init(void)
     lv_scr_load(img);
 
     // 3秒后切换
-//    lv_timer_create(boot_to_main_cb, 1000, NULL);
+    lv_timer_create(boot_to_main_cb, 1000, NULL);
 }
